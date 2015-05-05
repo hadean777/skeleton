@@ -33,7 +33,7 @@ public class AppAuthManager implements AuthenticationManager {
 			String login = (String) p_auth.getPrincipal();
 			String pwrd = (String) p_auth.getCredentials();
 			
-			//TODO: authentication and authorization will be done using POW DB
+			
 			if( StringUtils.isNotBlank( login ) && StringUtils.isNotBlank( pwrd )
 					&& StringUtils.equalsIgnoreCase( login, pwrd ) ) {
 				userInfo = new UserInfo( login, pwrd, 
